@@ -19,8 +19,8 @@ class API():
         @return return list of comments
         Goal: get avaliable comments of the post
     """
-    def get_comments(self, group_id: int, post_id: int):
-        response = self.api.wall.getComments(owner_id=group_id, post_id=post_id, count=MAX_COMMENTS)
+    def get_comments(self, owner_id: int, post_id: int):
+        response = self.api.wall.getComments(owner_id=owner_id, post_id=post_id, count=MAX_COMMENTS)
         print("items: " + str(response['items']))
         print("items type: " + str(type(response['items'])))
         print(response)
