@@ -2,7 +2,8 @@
 class Engine():
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
+        self.lexalEngines = list()
+        self.lexalEngines.append()
     """
         @param string - any string
         @return dict of words with lexical value
