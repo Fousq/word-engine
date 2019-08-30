@@ -25,6 +25,6 @@ class API():
         print("items type: " + str(type(response['items'])))
         print(response)
         comments = list()
-        for comment in response['items']:
-            comments.append(comment['text'])
+        for item in response['items']:
+            comments.append(item['text'])
         return comments
