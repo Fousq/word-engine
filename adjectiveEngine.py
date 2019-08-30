@@ -5,9 +5,12 @@ class AdjectiveEngine():
 
     """
         @param string - any string
-        @return detected adjectives
+        @return list of detected adjectives
         Goal: get any string to obtain detected adjectives
     """
     def process(self, string):
         adjectives = list()
         return adjectives
+
+    def __str__(self):
+        return "Adjective engine: " + str(self.__hash__())
